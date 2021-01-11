@@ -1,0 +1,95 @@
+.main-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+
+.msg-screen {
+  width: 80%;
+  height: 35em;
+  background-color: #61778d;
+  overflow-y: scroll;
+  padding: 3%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.msg-screen::-webkit-scrollbar {
+  width: 0px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.msg-item {
+  background-color: #f0e8e1;
+  padding: 13px;
+  margin-top: 30px;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  width: fit-content;
+  color: #2f3b49;
+}
+
+.form {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #415164;
+  padding: 5px;
+}
+
+#input-box {
+  background-color: #f0e8e1;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 5px;
+  transition: ease-in-out 0.3s;
+  color: #2f3b49;
+}
+
+#input-box:hover {
+  background-color: #fffac6;
+}
+
+.sendBtn {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  transition: ease-in-out 0.3s;
+  color: #2f3b49;
+  background-color: #f0e8e1;
+}
+
+.sendBtn:hover {
+  background-color: #2f3b49;
+  color: #fffac6;
+  cursor: pointer;
+}

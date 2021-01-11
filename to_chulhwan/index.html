@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoVA 익명방</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="stylesheet" href="css/header.css" />
+  </head>
+
+  <body>
+    <header>
+      <span class="header-text">SoVA 익명방</span>
+    </header>
+    <main>
+      <div class="main-screen">
+        <div class="msg-screen">
+          <ul id="show-list"></ul>
+        </div>
+
+        <div class="form">
+          <input type="text" id="input-box" autofocus />
+          <button onclick="sendMsg()" class="sendBtn">
+            <span><i class="fas fa-plus"></i></span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+    <script src="firebase.js"></script>
+    <script
+      src="https://kit.fontawesome.com/49406c8a93.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

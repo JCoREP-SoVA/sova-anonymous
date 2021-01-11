@@ -1,0 +1,14 @@
+header {
+  padding: 15px;
+  background-color: #415164;
+  margin-bottom: 10px;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+  top: 0px;
+}
+
+.header-text {
+  font-size: 2em;
+  color: #f0e8e1;
+}
