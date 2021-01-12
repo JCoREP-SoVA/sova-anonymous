@@ -1,0 +1,66 @@
+body{
+    background-image: url("woman-2728727_1920.jpg");
+}
+
+
+header{
+    text-align: center; 
+}
+
+
+.text_grad{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 50px;
+    font-weight: bolder;   
+}
+.text_grad span {
+    background: linear-gradient(to right,#d1f30fd8 , #f1f3ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box{
+    width: 440px;
+    height: 600px;
+    margin-right: 160px;
+    display: flex;
+    justify-content :  left; /*수평 */
+    align-items: top;    /* 수직 */
+    background-image: url("night.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: right;
+    overflow-y: scroll;
+    
+}
+.box_text{
+    list-style-image : url("star.jpg");
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+
+.input_box{
+    width: 700px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-image: url("cloud.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form{
+    margin-top: 650px;
+    float: right;
+}
+
+
+*      /* 전체 적용
+,      같이 적용됨    ex) #body , .div
+
+
+/*      display: flex;
+        justify-content :  center; /*수평 */
+        align-items: center;    /* 수직 */
