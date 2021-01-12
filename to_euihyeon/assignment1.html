@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>SoVA</title>             
+        <link rel="stylesheet" href="assignment1.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+
+    <body style="margin-left: 800px; margin-right: 625px;">
+        <div class="spot fade_in">
+            <h1 style="width: 738px; height: 150px; margin-bottom: 30px;">
+                <span>2</span><span>0</span><span>2</span><span>1</span>
+                <span>JCoREP</span>
+            </h1>
+            <h2>SoVA 익명 게시판</h2>
+            <p>2021년 SoVA팀의 이야기를 소개합니다</p>
+        </div>
+
+        <div class="form">
+            <input type="text" id="input-box">
+            <button class="sendBtn" onclick="sendMsg()">전송</button>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+        </div>
+
+        <div id="show" style="color: white;">
+            <ul id="show-list"></ul>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script> hello
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script> hello
+        <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDzItsp73dPYabJoihOt3BFtiHjS_sJiT4",
+            authDomain: "sova-anonymous-1e5d8.firebaseapp.com",
+            databaseURL: "https://sova-anonymous-1e5d8-default-rtdb.firebaseio.com",
+            projectId: "sova-anonymous-1e5d8",
+            storageBucket: "sova-anonymous-1e5d8.appspot.com",
+            messagingSenderId: "101152517586",
+            appId: "1:101152517586:web:436857a2f5878186906c0b",
+        };
+      // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.database().ref("anonymous");
+        const show = document.querySelector("#show-list");
+        function sendMsg() {
+            let text = document.querySelector("#input-box").value;
+            if (text != "") {
+                db.push({
+                    content: text,
+                });
+                showMsg();
+                document.querySelector("#input-box").value = "";
+            }
+        }
+        function showMsg() {
+            db.on("child_added", (snapshot) => {
+            const data = snapshot.val();
+            let newLi = document.createElement("li");
+            let newText = document.createTextNode(data.content);
+            newLi.setAttribute("class", "msg-item");
+            newLi.appendChild(newText);
+            show.removeChild();
+            show.appendChild(newLi);
+            });
+        }
+        function init() {
+            db.on("child_added", (snapshot) => {
+            const data = snapshot.val();
+            let newLi = document.createElement("li");
+            let newText = document.createTextNode(data.content);
+            newLi.appendChild(newText);
+            show.appendChild(newLi);
+            });
+        }
+        init();
+        </script>
+        
+    </body>
+</html>
