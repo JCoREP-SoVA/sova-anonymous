@@ -1,0 +1,54 @@
+body{
+    margin:0;
+    padding:0;
+    background-image:url("mercedes-841465_1920.jpg");
+    background-repeat: no-repeat;
+}
+.form{
+    height: 50px;
+    margin:0;
+
+}
+.box{
+    width: 640px;
+    height: 600px;
+    margin-right: 160px;
+    display: flex;
+    justify-content :  left; /*수평 */
+    align-items: top;    /* 수직 */
+    background-image: url("astronomy-1867616_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    overflow-y: scroll;
+    border-style:solid;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    border-width:5px;
+    border-color: black;
+    margin-left: 30px;
+    
+   
+}
+.box_text{
+    list-style-image : url("1.png");
+    color: white;
+    margin-bottom: 10px;
+}
+.text_grad{
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 110px;
+    font-weight: bolder;  
+    color: white;
+}
+.input_box{
+    margin-left: 50px;
+    width: 550px;
+    height: 50px;
+}
+.sendBtn{
+    background-color:aqua;
+    width: 70px;
+    height: 50px;
+}
