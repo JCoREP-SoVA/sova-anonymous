@@ -1,0 +1,84 @@
+body {
+    margin: 50px;
+    color: rgb(119, 159, 206);
+    padding: 50px;
+}
+
+button {
+    border-radius: 5px;
+    background-color:rgb(85, 154, 211);
+}
+
+input {
+    border-radius: 5px;
+}
+.form {
+    background-color: rgb(212, 233, 93);
+    position: relative;
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+#show {
+    color: royalblue;
+    text-align: center;
+}
+
+ul {
+    line-height: 2em;
+}
+
+span { 
+    font-size: 80%; 
+    line-height: 15px; 
+}
+
+#show-list {
+    list-style: none;
+    padding-left: 0px;
+    border-style: solid; border-width: 0 0 0 8px; padding: 12px; word-break: break-all;
+    border-color: rgb(85, 154, 211);
+    background-color: rgb(rgb(166, 195, 223), green, blue);
+    margin-top: 10px;
+}
+
+.balloon_03 {
+    position:relative;
+    margin: 50px;
+    width:400px;
+    height:100px;
+     background:#333333;
+     border-radius: 10px;
+   }
+   .balloon_03:after {
+    border-top:15px solid #333333;
+    border-left: 15px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    content:"";
+    position:absolute;
+    top:10px;
+    left:-15px;
+   }
+
+h1 {
+    position: relative;
+    left: 50%;
+    left: 100px;
+    bottom: -100px;
+    background-color: rgb(85, 154, 211);
+    text-align: center;
+    width: 400px;
+    border-radius: 10px;
+    color: rgb(212, 233, 93);
+    font-style: oblique;
+}
+
+img {
+    position: relative;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    left: 800px;
+}
