@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid-box{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 30px 620px 50px;
+    column-gap: 10px;
+    grid-template-areas:
+    "insta reply"
+    "insta show"
+    "insta form"
+}
+.insta{ grid-area: insta;}
+.form {
+    grid-area: form;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+header{
+    display: flex;
+    justify-content: center;
+    font-family: 'Cafe24Oneprettynight';
+    width: 1010px;
+    font-size:25px;
+    font-weight: bold;
+    padding:10px;
+}
+#input-box{
+    border:none;
+    background-color: rgba(212, 212, 212, 0.5);
+    border-bottom-left-radius: 22.5px;
+    border-top-left-radius: 22.5px;
+    height: 45px;
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 20px;
+    width:350px;
+}
+.sendBtn{
+    background-color: rgba(212, 212, 212, 0.5);
+    height: 47px;
+    border-bottom-right-radius: 22.5px;
+    border-top-right-radius: 22.5px;
+    border-bottom:none;
+    border-top: none;
+    border-right: none;
+    border-left-color: rgba(128, 128, 128, 0.623);
+    border-left-width: 1px;
+    font-family: 'Cafe24Oneprettynight';
+    width: 47px;
+}
+
+#reply{ 
+    grid-area: reply; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cafe24Oneprettynight'; font-size: 22px;
+    border-bottom-width: 3px;
+    border-bottom-color: gray;
+}
+
+#show{
+    grid-area: show;
+    height: 620px;
+    overflow: scroll;
+}
+#show::-webkit-scrollbar {
+    display: none; 
+}
+#show-list li{
+    list-style-type: none;
+    width:fit-content;
+    max-width: 75%;
+    background-color: #42e0d03b;
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 22px;
+    margin-bottom: 5px;
+    padding: 7px;
+    border-radius: 10px;
+    text-align: left;
+}
+
