@@ -1,0 +1,134 @@
+.background{
+    width: 300px;
+    height: 500px;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: slategrey;
+}
+
+header{
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.left_icon{
+    margin-left: 2px;
+    margin-right: 218px;
+}
+
+.right_icon i:first-child:hover{
+    color: red;
+}
+
+.profile_picture{
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.profile_picture img:first-child{
+    width: 10em;
+    height: 10em;
+}
+
+main{
+    text-align: center;
+}
+
+.profile_name{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.profile_job{
+    color: rgba(90, 89, 89, 0.507);
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.profile_comment{
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.hire_btn button:first-child{
+    border-radius: .9em;
+    border-width: 0em;
+    width: 83px;
+    height: 28px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.hire_btn button:first-child:hover{
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
+}
+
+button{
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    border-width: 0em;
+}
+
+.facebook_btn{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.instagram_btn{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.twitter_btn{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.SNS_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.facebook_btn button:first-child{
+    background-image: url("/to_euihyeon/img/facebook.png");
+    
+}
+
+.instagram_btn button:first-child{
+    background-color: white;
+
+}
+
+.twitter_btn button:first-child{
+    background-color: white;
+}
+
+.facebook_btn div:first-child{
+    margin-top: 10px;
+}
+
+hr{
+    width: 250px;
+    /* height:10px;
+    color: red;
+    border: 0;
+    box-shadow:0 10px 10px – 10px #bbb inset; */
+}
