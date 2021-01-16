@@ -1,0 +1,59 @@
+.background{
+    background-color: rgb(238, 197, 204);
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Times New Roman", sans-serif;
+    position: relative;
+}
+
+.food_image{
+    text-align: center;
+    flex-direction: row;
+}
+
+img{
+    width: 782px;
+    height: 293px;
+    object-fit: cover;
+    border-radius: 2%;
+    position: relative;
+}
+
+.food_image_play{
+    position: absolute;
+    left: 650px;
+    top: 236px;
+}
+
+.food_image_play:hover{
+    color: red;
+}
+
+.food_name{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+main{
+    margin-left: 10px;
+}
+
+.food_icon{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.food_ingredients{
+    margin-top: 13px;
+}
+
+.food_ingredients span:first-child{
+    font-weight: bold;
+}
+
+.food_kind{
+    color: gray;
+}
